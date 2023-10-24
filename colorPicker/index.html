@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="background.css">
+    <script defer src="background.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <h1 style= "text-align: center">color board</h1>
+        <div class="slide_cont">
+            <label for="redRange"> red range: </label>
+            <input  type="range" id="redRange" min="0" max="255" value="0" step="1" oninput="Color()"/>
+
+            <label for="greenRange"> green range: </label>
+            <input type="range" id="greenRange" min="0" max="255" value="0" step="1" oninput="Color()"/>
+
+            <label for="blueRange"> blue range: </label>
+            <input type="range" id="blueRange" min="0" max="255" value="0" step="1" oninput="Color()"/>
+
+            <label id="rgb_txt">RGB(0,0,0)</label>
+
+        </div>
+        <div class = "inner_cont" id="inner_cont">  
+        </div>
+    </div>
+</body>
+</html>
